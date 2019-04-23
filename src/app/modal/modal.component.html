@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h4 class="modal-title">Confirm</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.close(false)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>You have unsaved changes. Are you sure you want to leave?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" ngbAutofocus class="btn btn-outline-secondary" (click)="activeModal.close(false)">Stay</button>
+    <button type="button" class="btn btn-danger" (click)="activeModal.close(true)">Leave</button>
+  </div>
